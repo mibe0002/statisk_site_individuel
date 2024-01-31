@@ -1,0 +1,123 @@
+.item_list {
+  width: 100%;
+  height: 100%;
+  padding: 0 120px;
+}
+
+.item {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.item img {
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 160px;
+  max-height: 100%;
+}
+
+.item_link p {
+  letter-spacing: 2.5px;
+  word-spacing: 2px;
+  line-height: 35px;
+}
+
+.item_link {
+  color: inherit;
+  letter-spacing: 1px;
+}
+
+.grid_item_filter {
+  display: flex;
+}
+
+@media (min-width: 800px) {
+  /* 
+************** Filter **************
+*/
+  .filter {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    text-align: left;
+    padding: 1%;
+    margin-bottom: 80%;
+  }
+
+  .filter a {
+    padding: 10px 1px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    transition: all 0.2s;
+    font-family: var(--primary-font);
+    font-weight: bold;
+  }
+
+  .filter a:hover {
+    color: #472828;
+  }
+
+  .items a.hide,
+  .items a.pophide {
+    opacity: 0;
+    transition: all 0.1s;
+  }
+
+  .item.hide {
+    display: none;
+  }
+  /*
+************** vha. Nodws (account) "CodePen, Gallery Item filter" samt. chatgpt. **************
+*/
+
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5%;
+  }
+}
+
+@media (max-width: 800px) {
+  .skatkammer {
+    font-size: 1rem;
+    margin-bottom: 5%;
+  }
+
+  .cp {
+    font-size: 1rem;
+    display: none;
+  }
+
+  .hus_img {
+    display: none;
+  }
+  .item_list {
+    padding: 0 60px;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 5%;
+    align-items: center;
+  }
+
+  .back a:link {
+    position: relative;
+    margin: 0 30px 0 0;
+    font-size: 30px;
+  }
+
+  .back {
+    text-align: right;
+  }
+
+  /* FILTER */
+  .filter {
+    display: none;
+  }
+}

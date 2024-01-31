@@ -1,0 +1,60 @@
+@media (min-width: 789px) {
+  .grid1_2 {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .kasse {
+    position: relative;
+    background-color: var(--primary-cl);
+    padding: 10px;
+    width: 35%;
+    margin: 0 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .kasse h2 {
+    margin: 10px 0;
+    color: var(--cl-4);
+  }
+
+  .kasse h2:hover {
+    color: var(--secondary-cl);
+  }
+}
+
+@media (max-width: 800px) {
+  .grid1_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 30px;
+  }
+
+  .kasse {
+    border: solid var(--secondary-cl) 1px;
+    padding: 10px;
+    width: auto;
+    height: 400px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kasse h2 {
+    margin-bottom: 10px;
+  }
+
+  .kasse p {
+    line-height: 110%;
+    padding: 0 10px;
+  }
+}
