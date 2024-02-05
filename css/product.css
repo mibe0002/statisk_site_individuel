@@ -1,14 +1,14 @@
-.grid_1_2 {
+/* .grid_1_2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: auto;
   gap: 40px;
-}
+} */
 
 /* 
 dropdown
  */
-.press {
+/* .press {
   cursor: pointer;
 }
 
@@ -22,12 +22,12 @@ dropdown
 
 .active {
   display: block;
-}
+} */
 
 /* 
 sektioner
 */
-.sektion1 {
+/* .sektion1 {
   display: grid;
   grid-column: 1;
   grid-row: 1;
@@ -64,4 +64,4 @@ sektioner
 
 .cart a:hover {
   color: var(--secondary-cl);
-}
+} */
