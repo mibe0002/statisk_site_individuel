@@ -1,0 +1,123 @@
+.sport_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  gap: 1rem;
+}
+
+.sport_article {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.sport_img_container {
+  background-color: rgb(221, 233, 238);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.udsolgt {
+  color: black;
+  z-index: 10;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  background-color: rgb(225, 0, 0, 0.5);
+  padding: 4px;
+}
+
+.favourit {
+  position: absolute;
+  left: 80%;
+  top: 16%;
+  transform: translate(-20%, -84%);
+  font-size: larger;
+  padding: 0 4px;
+  color: white;
+  background-color: var(--cl-5);
+  cursor: pointer;
+}
+
+.sport_img {
+  max-width: 100%;
+  height: 250px;
+}
+
+.sport_img {
+  transition: filter 0.2s linear;
+  background-color: rgb(225, 0, 0, 1);
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+/* .grid_item_filter {
+  display: flex;
+} */
+
+@media (min-width: 800px) {
+  .sport_container {
+  }
+}
+
+/* 
+************** Filter **************
+*/
+
+/* 
+  .filter {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    text-align: left;
+    padding: 1%;
+    margin-bottom: 80%;
+  }
+
+  .filter a {
+    padding: 10px 1px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    transition: all 0.2s;
+    font-family: var(--primary-font);
+    font-weight: bold;
+  }
+
+  .filter a:hover {
+    color: #472828;
+  }
+
+  .items a.hide,
+  .items a.pophide {
+    opacity: 0;
+    transition: all 0.1s;
+  }
+
+  .item.hide {
+    display: none;
+  } */
+
+/*
+************** vha. Nodws (account) "CodePen, Gallery Item filter" samt. chatgpt. **************
+*/
+
+@media (max-width: 800px) {
+  .sport_container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

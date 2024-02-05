@@ -47,6 +47,12 @@ h2 {
   margin-bottom: 10px;
 }
 
+h3 {
+  font-family: var(--primary-font);
+  font-size: larger;
+  margin: 10px auto;
+}
+
 p {
   font-family: var(--secondary-font);
   font-size: var(--font-aogp);
@@ -75,7 +81,7 @@ a:hover,
 Menu/Body
 */
 main {
-  margin: 0 100px;
+  margin: 2rem;
 }
 
 body {
