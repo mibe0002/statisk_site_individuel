@@ -70,6 +70,7 @@ ul {
   display: flex;
   gap: 50px;
   justify-content: center;
+  z-index: 10;
 }
 
 a:hover,
@@ -141,6 +142,23 @@ a:hover {
 
 .back {
   font-size: xx-large;
+  margin-top: 0;
+}
+
+/* 
+Footer
+*/
+#imageLink,
+#mail {
+  font-style: italic;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 0 2rem;
+  border-top: solid var(--primary-cl) 1.5px;
 }
 
 /*
@@ -239,5 +257,14 @@ mobile
 
   .menu a {
     color: white;
+  }
+
+  /* 
+  footer
+  */
+  .footer_menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
   }
 }

@@ -47,53 +47,67 @@
             <a href="productlist.html">🡐</a>
         </div>
 
-        <ul class="sti">
-            <li> <a href="categories.html">
-                    <p class="key"><strong>Categories -</strong></p>
-                    <p class="value">Apparel/Topwear/Tshirts</p>
-                </a></li>
-            <li>
-                <a href="#">Brands</a>
-            </li>
-            <li><a href="#">Seasons</a></li>
-        </ul>
-
         <section class="purchase_box">
-            <h1>name</h1>
-
-            <div class="product_1">
+            <div class="product_img">
+                <button class="favourit">♡</button>
                 <img src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp" alt="billede af produktet">
             </div>
 
-            <div class="product_2">
-                <p><span class="brand">Nike</span> | Tshirts</p>
+            <div class="product_side">
+                <div class="breadcrumb">
+                    <div class="categories1">
+                        <a role="button" href="categories.html">Categories</a>
+                        <span>/</span>
+                        <a role="button" href="productlist.html" class="category">Apparel</a>
+                        <span>/</span>
+                        <a role="button" href="#" class="subcategory">Topwear</a>
+                    </div>
 
-                <div class="sammen">
-                    <p class="key"><strong>Size</strong><br>One-size</p>
-                    <p class="value">1595 DKK</p>
+                    <div class="categories2">
+                        <a role="button" href="#">Brands</a>
+                        <span>,</span>
+                        <a role="button" href="#" class="season">Seasons</a>
+                    </div>
                 </div>
 
-                <div class="sammen">
-                    <p class="key"><strong>Gender</strong><br>Men/Adult</p>
-                    <p class="key"><strong>Color</strong> <br>Blue</p>
-                </div>
-            </div>
-
-            <div class="description">
-                <h2>Product Information</h2>
-
-                <p>description</p>
-
-                <h2 class="press">Materials</h2>
-                <div class="dropdown">
-                    <p>100% polyester<br>Machine wash</p>
+                <div class="product_head">
+                    <h1>name</h1>
+                    <div class="price_tag">
+                        <p class="price">1595</p>
+                        <p class="discount">-<span>45</span> %</p>
+                    </div>
                 </div>
 
-                <h2 class="press">More Information</h2>
-                <div class="dropdown">
-                    <div class="block">
-                        <p class="key"><strong>Season</strong><br>Summer</p>
-                        <p class="key"><strong>Production Year</strong><br>2011</p>
+                <div class="product_selector1">
+                    <p>(Size guide)</p>
+                    <p class="soldout"></p>
+                    <p class="brandname"><span></span> <span class="articletype"></span></p>
+                </div>
+
+                <div class="product_selector2">
+                    <p class="basecolour"></p>
+                    <p class="gender"><strong>Gender</strong> <span>Men</span></p>
+                </div>
+
+                <div class="product_description">
+                    <h2 class="press">description</h2>
+                    <div class="dropdown">
+                        <p class="description"><span>Blue jersey with a tipped collar, concealed, half buttoned placket,
+                                Nike
+                                print on the right chest, Team India print and
+                                applique on the front, short sleeves, tri-colour side panels, print at the back</span>.
+                        </p>
+
+                        <p class="usagetype">The clothing is made for <span>sports</span> activities.</p>
+
+                        <p class="productionyear">Production Year <span>2011</span>.</p>
+                    </div>
+                </div>
+
+                <div class="product_materials">
+                    <h2 class="press">Materials</h2>
+                    <div class="dropdown">
+                        <p class="materialcaredesc">Polyester<br>Machine wash</p>
                     </div>
                 </div>
 
@@ -101,6 +115,24 @@
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="footer_menu">
+            <ul>
+                <li><a href="index.html">SHOP-CLOTHES</a></li>
+                <li><a href="categories.html">CATEGORIES</a></li>
+                <li><a href="productlist.html">PRODUCTS</a></li>
+
+                <li><a href="#" id="imageLink">SIGN UP</a></li>
+                <li id="mail"><a>EMAIL</a></li>
+                <li>
+                    <a href="https://mivanna.dk/kea/06_portfolio_sitet/portfolio_site/index.html">
+                        MIV BERG
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
     <script src="js/product.js"></script>
     <script src="js/menu.js"></script>

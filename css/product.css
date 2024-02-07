@@ -1,14 +1,87 @@
-/* .grid_1_2 {
+main {
+  margin: 6rem;
+}
+
+/*
+venstre side
+*/
+.purchase_box {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: auto;
-  gap: 40px;
-} */
+  grid-template-rows: auto;
+  min-height: 100vh;
+  gap: 1rem;
+}
+
+.product_img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  padding: 1rem;
+}
+
+.favourit {
+  position: absolute;
+  left: 87%;
+  top: 2%;
+  font-size: larger;
+  padding: 0 4px;
+  color: black;
+  cursor: pointer;
+}
+
+/*
+Højre side
+*/
+.breadcrumb {
+  line-height: 1.4rem;
+  padding-left: 2rem;
+  text-transform: uppercase;
+  display: flex;
+  gap: 3rem;
+}
+
+.product_head h1 {
+  max-width: 45rem;
+  padding-left: 2rem;
+}
+
+.price_tag {
+  padding-left: 25rem;
+  display: inline-flex;
+  gap: 1rem;
+}
+
+.product_selector1 {
+  padding-left: 2rem;
+  display: inline-flex;
+  padding-top: 1.8rem;
+  gap: 3rem;
+}
+
+.product_selector2 {
+  padding-left: 2rem;
+  display: inline-flex;
+  padding-top: 1.8rem;
+  gap: 3rem;
+}
+
+.soldout {
+  color: var(--secondary-cl);
+}
+
+.usagetype {
+  text-transform: lowercase;
+}
+
+.product_description .product_materials {
+  padding-left: 4rem;
+}
 
 /* 
 dropdown
  */
-/* .press {
+.press {
   cursor: pointer;
 }
 
@@ -20,42 +93,21 @@ dropdown
   display: none;
 }
 
-.active {
+.dropdown.active {
   display: block;
-} */
+}
 
 /* 
-sektioner
+cart
 */
-/* .sektion1 {
-  display: grid;
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.product_info,
-.block {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.sektion2 {
-  display: grid;
-  grid-column: 1;
-  grid-row: 2;
-}
-
 .cart {
   background-color: var(--primary-cl);
-  margin-top: 130px;
+  margin-top: 4rem;
   height: 40px;
-  width: 170px;
+  width: auto;
   padding: 10px;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  grid-column: 2;
-  grid-row: 2;
 }
 
 .cart a {
@@ -64,4 +116,48 @@ sektioner
 
 .cart a:hover {
   color: var(--secondary-cl);
-} */
+}
+
+/* mobile */
+@media (max-width: 800px) {
+  main {
+    margin: 2rem;
+  }
+
+  .purchase_box {
+    display: block;
+    min-height: auto;
+  }
+
+  .favourit {
+    top: 7%;
+    left: 85%;
+  }
+
+  .breadcrumb {
+    padding-left: 1rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .product_head h1 {
+    max-width: none;
+    padding-left: 1rem;
+  }
+
+  .price_tag,
+  .product_selector1,
+  .product_selector2 {
+    padding-left: 1rem;
+    gap: 1rem;
+  }
+
+  .product_description .product_materials {
+    padding-left: 1rem;
+  }
+
+  .cart {
+    margin-top: 2rem;
+    padding: 10px;
+  }
+}

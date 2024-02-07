@@ -44,46 +44,64 @@
 
     <main>
         <div class="back">
-            <a href="products.html">🡐</a>
+            <a href="categories.html">🡐</a>
         </div>
 
-        <h1>Sport</h1>
-        <p>Whatever a sportslover would like</p>
         <section>
-            <h2>For the sportslover</h2>
+            <h1>Sport</h1>
 
             <div class="sport_container">
                 <template class="sport_template">
                     <article class="sport_article">
-
                         <div class="sport_img_container">
+                            <a class="read_more" href="product.html"><img class="sport_img"></a>
                             <p class="udsolgt">Udsolgt</p>
                             <button class="favourit">♡</button>
-                            <a class="read_more" href="product.html"><img class="sport_img"></a>
+
+                            <div><a class="read_more" href="product.html">
+                                    <h3 class="sport_name">
+                                        Name
+                                    </h3>
+                                </a>
+
+                                <div class="price_tag">
+                                    <p class="price"></p>
+                                    <p class="discount"></p>
+                                </div>
+                            </div>
+
+                            <!-- 
+                            <p class="subcat">Tshirts | Nike</p>
+                            <p class="pris"><span>Prev.</span> 1595,- DKK</p> -->
+
+
+                            <!-- 
+                            <p class="sport_tagline">You buy we provide</p>
+                            <p class="styledesc"><span>Root for our country in style with this team India jersey from
+                                    Nike.
+                                    The Dri-fit fabric and panel</span>.</p> -->
                         </div>
-
-                        <a class="read_more" href="product.html">
-                            <h3 class="sport_name">
-                                Name
-                            </h3>
-                        </a>
-
-                        <p class="subcat">Tshirts | Nike</p>
-                        <p class="pris"><span>Prev.</span> 1595,- DKK</p>
-
-                        <div class="discount">
-                            <p>Now 15600,- DKK</p>
-                            <p class="rabat">-34%</p>
-                        </div>
-
-                        <p class="sport_tagline">You buy we provide</p>
-                        <p class="sport_description">Buy this to support as a loyal fan.</p>
-
                     </article>
                 </template>
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="footer_menu">
+            <ul>
+                <li><a href="index.html">SHOP-CLOTHES</a></li>
+                <li><a href="categories.html">CATEGORIES</a></li>
+                <li><a href="productlist.html">PRODUCTS</a></li>
+
+                <li><a href="#" id="imageLink">SIGN UP</a></li>
+                <li id="mail"><a>EMAIL</a></li>
+                <li>
+                    <p>Miv Berg</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
     <script src="js/menu.js"></script>
     <script src="js/productlist.js"></script>

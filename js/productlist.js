@@ -1,4 +1,4 @@
-fetch("https://kea-alt-del.dk/t7/api/products")
+fetch("https://kea-alt-del.dk/t7/api/products?limit=30")
   .then((res) => res.json())
   .then(showSports);
 
@@ -20,10 +20,19 @@ function showSport(sport) {
   copy.querySelector(".sport_img").src = `https://kea-alt-del.dk/t7/images/webp/1000/${sport.id}.webp`;
   copy.querySelector(".sport_img").alt = sport.productdisplayname;
 
-  if (sport.soldout == 0) {
+  copy.querySelector(".price").textContent = sport.price + " DKK";
+
+  if (sport.discount === null) {
+    copy.querySelector(".discount").textContent = "";
+  } else {
+    copy.querySelector(".discount").textContent = "-" + sport.discount + "%";
+  }
+
+  if (sport.soldout === 0) {
     // produktet er udsolgt
     copy.querySelector(".udsolgt").classList.add("udsolgt");
     // console.log("Soldout value:", sport.soldout);
+
     copy.querySelector(".favourit").style.display = "none";
 
     // blur img når udsolgt
@@ -36,7 +45,6 @@ function showSport(sport) {
 
   copy.querySelector(".read_more").setAttribute("href", `product.html?id=${sport.id}`);
 
-  // copy.querySelector(".read-more").setAttribute("href", `product.html?id=${product.id}`);
   // appende
   document.querySelector(".sport_container").appendChild(copy);
 }

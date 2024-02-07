@@ -1,9 +1,9 @@
-const frugter = ["banan", "æble", "appelsin"];
-const ul = document.querySelector("ul");
+// const frugter = ["banan", "æble", "appelsin"];
+// const ul = document.querySelector("ul");
 
-frugter.forEach(bygListe);
+// frugter.forEach(bygListe);
 
-function bygListe(elm) {
-  console.log(elm);
-  ul.innerHTML += "<li>" + elm + "</li>";
-}
+// function bygListe(elm) {
+//   console.log(elm);
+//   ul.innerHTML += "<li>" + elm + "</li>";
+// }

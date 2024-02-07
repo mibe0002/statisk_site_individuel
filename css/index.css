@@ -1,0 +1,25 @@
+main {
+  padding: 20px;
+}
+
+p {
+  text-align: center;
+}
+
+.featured {
+  margin-bottom: 20px;
+}
+
+.sport-card {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.sport-card img {
+  width: 200px;
+  height: auto;
+}
+
+.latest-news ul {
+  list-style-type: none;
+}

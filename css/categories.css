@@ -35,26 +35,30 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 30px;
+    margin: 20px auto;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   .kasse {
-    border: solid var(--secondary-cl) 1px;
+    width: 80%;
+    margin: 0 auto 50px;
+    position: relative;
+    background-color: var(--primary-cl);
     padding: 10px;
-    width: auto;
-    height: 400px;
-    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
 
   .kasse h2 {
-    margin-bottom: 10px;
+    margin: 10px 0;
+    color: var(--cl-4);
   }
 
-  .kasse p {
-    line-height: 110%;
-    padding: 0 10px;
+  .kasse h2:hover {
+    color: var(--secondary-cl);
   }
 }
