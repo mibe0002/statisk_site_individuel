@@ -20,7 +20,7 @@ function showProduct(product) {
   document.querySelector(".brandname").textContent = product.brandname;
   document.querySelector(".product_img img").src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;
   document.querySelector(".product_img img").alt = product.productdisplayname;
-  document.querySelector(".price").textContent = product.price + " DKK";
+  document.querySelector(".product_price").textContent = product.price + " DKK";
   document.querySelector(".brandname").textContent = product.brandname + " | " + product.articletype;
   document.querySelector(".basecolour").textContent = "Color: " + product.basecolour;
   document.querySelector(".gender").textContent = "Gender: " + product.gender;
@@ -28,11 +28,13 @@ function showProduct(product) {
   document.querySelector(".usagetype").textContent = "The clothing is made for " + product.usagetype + " activities.";
   document.querySelector(".productionyear").textContent = "Production Year " + product.productionyear + ".";
   document.querySelector(".materialcaredesc").textContent = product.materialcaredesc;
+  document.querySelector(".category").textContent = product.category;
+  document.querySelector(".subcategory").textContent = product.subcategory;
 
   if (product.discount === null) {
-    document.querySelector(".discount").textContent = "";
+    document.querySelector(".product_discount").textContent = "";
   } else {
-    document.querySelector(".discount").textContent = "-" + product.discount + "%";
+    document.querySelector(".product_discount").textContent = "-" + product.discount + "%";
   }
 
   if (product.soldout === 0) {

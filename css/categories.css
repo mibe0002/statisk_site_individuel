@@ -10,7 +10,7 @@
 
   .kasse {
     position: relative;
-    background-color: var(--primary-cl);
+    background-color: var(--cl-5);
     padding: 10px;
     width: 35%;
     margin: 0 0 50px 0;
@@ -22,7 +22,6 @@
 
   .kasse h2 {
     margin: 10px 0;
-    color: var(--cl-4);
   }
 
   .kasse h2:hover {
@@ -45,7 +44,7 @@
     width: 80%;
     margin: 0 auto 50px;
     position: relative;
-    background-color: var(--primary-cl);
+    background-color: var(--cl-5);
     padding: 10px;
     display: flex;
     flex-direction: column;
